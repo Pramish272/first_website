@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+
+
+
+/* Navbar section */
+.navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-family: "Baloo Bhai 2", cursive;
+}
+.navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.logo {
+  margin: 10px 10px;
+}
+.logo img {
+  height: 60px;
+  margin: 7px 14px;
+}
+
+.navbar ul {
+  width: 700px;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 25px;
+  padding: 7px 8px;
+  margin: 10px 4px;
+  border-radius: 4px;
+  color: white;
+}
+li:hover a {
+  color: black;
+  background-color: white;
+}
+
+
+
+
+
+
+/* Home section */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 90%;
+  width: 107%;
+  background-image: url(../bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -3;
+  opacity: 0.4;
+}
+
+#home p {
+  font-size: 20px;
+  text-align: center;
+  font-family: "Bree Serif", serif;
+}
+
+
+
+
+
+
+
+/* botton section */
+.btn {
+  text-transform: uppercase;
+  padding: 6px 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: bisque;
+  margin: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all ease 1s;
+}
+.btn:hover {
+  scale: 1.2;
+  background-color: transparent;
+}
+
+
+
+
+
+
+
+/* services section */
+#container {
+  margin: 30px;
+  display: flex;
+  overflow: hidden;
+}
+#box {
+  border: 4px solid rgb(177, 170, 170);
+  padding: 25px;
+  margin: 3px 6px;
+  border-radius: 25px;
+  background-color: rgb(179, 175, 175);
+}
+#container p {
+  font-size: 20px;
+  font-family: "Bree Serif", serif;
+}
+#box img {
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin: auto;
+  transition: all ease 1s;
+}
+#box:hover img {
+  scale: 1.2;
+}
+
+
+
+
+
+
+
+
+/* client section */
+
+#client-container {
+  height: 350px;
+}
+#client-container::before {
+  content: "";
+  position: absolute;
+  background-image: url(../bg2.webp);
+  background-size: cover;
+  height: 50%;
+  width: 107%;
+  z-index: -1;
+  opacity: 0.5;
+}
+#client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#client img {
+  height: 160px;
+  width: 200px;
+  transition: ALL ease 1s;
+}
+#client-item {
+  padding: 10px 15px;
+}
+#client-item:hover img {
+  scale: 1.2;
+}
+
+
+
+
+
+
+
+/* contact section */
+#contact-container {
+  position: relative;
+}
+#Contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+#Contact form {
+  width: 40%;
+}
+label {
+  font-size: 15px;
+  font-family: "Bree Serif", serif;
+}
+
+#contact-container::before {
+  content: "";
+  position: absolute;
+  width: 107%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  background-image: url(../c2.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer {
+  background-color: black;
+  padding: 15px 30px;
+  opacity: 0.5;
+}
+.footer {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+/* utilities */
+.h-tertiary {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-size: 40px;
+  font-family: "Baloo Bhai 2", cursive;
+}
+.h-secondary {
+  padding: 10px;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  font-family: "Baloo Bhai 2", cursive;
+}
+.h-primary {
+  padding: 20px;
+  font-size: 50px;
+  font-family: "Baloo Bhai 2", cursive;
+}
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,64 @@
+.navbar{
+    flex-direction: column;
+}
+.navbar::before{
+    height:107%;
+    width: 107%;
+}
+.logo {
+    margin: 4px 6px;
+}
+.logo img {
+    height: 40px;
+    margin: 5px 14px;
+}
+.navbar ul {
+    width: 414px;
+    justify-content: space-evenly;
+    
+}
+
+.navbar a{
+    
+    font-size: 18px;
+    padding: 8px 16px;
+    margin: 10px 5px;
+    border-radius: 20px;
+}
+#home{
+    padding: 4px 30px;
+}
+
+#home p{
+    font-size: 15px;
+}
+#container {
+    margin: 15px;
+    flex-direction: column;
+}
+#container p{
+    font-size: 13px;
+}
+#client{
+    flex-wrap: wrap;
+}
+#client-container::before{
+    height: 56%;
+}
+#client-item{
+    padding: 6px 10px;
+}
+#client img{
+    height:100px ;
+    width: 155px ;
+}
+.h-primary {
+    font-size: 20px;
+}
+.h-secondary{
+    font-size: 20px;
+}
+.h-tertiary {
+    padding:6px;
+    font-size:23px;
+}
